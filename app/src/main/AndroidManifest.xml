@@ -9,12 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".lifecycle.MainActivity">
+        <activity android:name=".room.RoomActivity"></activity>
+        <activity android:name=".room.MainRoomActivity">
             <intent-filter>
-                <category android:name="android.intent.category.LAUNCHER"/>
-                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
+        <activity android:name=".viewnodel_livedata.MainViewModalActivity"></activity>
+        <activity android:name=".lifecycle.MainActivity" />
     </application>
 
 </manifest>

@@ -1,0 +1,29 @@
+ --------------- ViewModel -----------------------
+
+/* ViewModel ekin wenne api application eka rotation karankota eye lifecyle eke
+        onCreate OnPause OnResume method walata call wenawa habai ethakota ara data tika nathi wenawa. */
+
+  /* Habai meka api nathi kara ganna apita podi data tikak thiya ganna data set karanna
+        onSaveInstanceState() method eka athule data set karanna puluwan */
+
+  ADVANTAGES -
+               ## Used for large data such as ,bitmap or Map
+               ## Store and manage UI related data
+               ## Destroyed only if the owner Activity is Completely destroyed, in onCleared()
+               ## Communication layer between DB and UI
+
+
+ -------------------------- Live Data -------------------
+ /*
+    Observable data holder class
+    Keeps data and allows data to be observed
+    Observe LiveData from app component's onCreate() method
+ */
+
+ ADVANTAGES -
+            ## Keeps the UI updated in case of changes
+            ## Automatically destroyed when associated LifecycleOwner is distroyed
+            ## No crashes due to stopped activities
+            ## Can be shared by multiple resources
+
+            ?? ALWAYS USE WITH VIEWMODEL ??
